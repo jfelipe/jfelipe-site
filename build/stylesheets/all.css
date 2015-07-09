@@ -1,0 +1,468 @@
+/***********************************************************************************
+
+Setup
+
+************************************************************************************/
+/* line 9, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+html,
+body {
+  width: 100%;
+  height: auto;
+  overflow: auto; }
+
+/***********************************************************************************
+
+Typography
+
+************************************************************************************/
+/* line 23, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+/* line 29, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+h1, h2, h3 {
+  line-height: 1.2; }
+
+/* line 33, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+h1 {
+  font-size: 38px;
+  margin-bottom: 22px; }
+
+/* line 39, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px; }
+
+/* line 45, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px; }
+
+/* line 51, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+h1 a,
+h2 a,
+h3 a {
+  border-bottom: 1px solid;
+  font-weight: 700; }
+
+/* line 58, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+p {
+  line-height: 1.4;
+  margin-bottom: 20px; }
+
+/* line 64, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+a {
+  text-decoration: none;
+  transition-duration: 0.25s; }
+
+/* line 70, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+p a,
+strong {
+  font-weight: 700; }
+
+/* line 75, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+p a {
+  border-bottom: 1px solid; }
+
+/***********************************************************************************
+
+Icons
+
+************************************************************************************/
+@font-face {
+  font-family: "ionicons";
+  src: url("../icons/ionicons.eot?v=1.4.1");
+  src: url("../icons/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), url("../icons/ionicons.ttf?v=1.4.1") format("truetype"), url("../icons/ionicons.woff?v=1.4.1") format("woff"), url("../icons/ionicons.svg?v=1.4.1#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 96, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.icon {
+  font-family: "ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block; }
+
+/* line 111, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.icon.github:before {
+  content: "\f233"; }
+
+/* line 112, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.icon.linkedin:before {
+  content: "\f239"; }
+
+/* line 113, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.icon.email:before {
+  content: "\f10f"; }
+
+/* line 114, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.icon.submit:before {
+  content: "\f16c"; }
+
+/***********************************************************************************
+
+Containers
+
+************************************************************************************/
+/* line 122, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.row {
+  width: 100%;
+  float: left;
+  position: relative; }
+
+/* line 128, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.content {
+  width: 500px;
+  margin-left: 200px; }
+
+/***********************************************************************************
+
+Body
+
+************************************************************************************/
+/* line 140, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; }
+
+/* line 147, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+body::after {
+  border-right: 1px dashed;
+  width: 1px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100px;
+  z-index: -1;
+  content: ""; }
+
+/***********************************************************************************
+
+Header
+
+************************************************************************************/
+/* line 167, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#header {
+  border-bottom: 1px dashed;
+  line-height: 200px;
+  display: none; }
+
+/* line 175, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#header .content span.logo {
+  background-image: url("../images/mylogo.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 80px;
+  display: block;
+  padding-left: 100px; }
+
+/* line 186, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#header .status {
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  left: 0; }
+
+/* line 194, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#header .status span {
+  border-left: 1px solid;
+  font-size: 12px;
+  line-height: 20px;
+  height: 21px;
+  padding-left: 5px;
+  position: absolute;
+  top: -10px;
+  right: -165px; }
+
+/***********************************************************************************
+
+Intro
+
+************************************************************************************/
+/* line 215, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#intro {
+  padding: 83px 0 100px;
+  display: none; }
+
+/***********************************************************************************
+
+Post Subscribe
+
+************************************************************************************/
+/* line 227, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#post-subscribe h1 {
+  margin-bottom: 32px; }
+
+/***********************************************************************************
+
+Subscribe
+
+************************************************************************************/
+/* line 237, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#subscribe {
+  margin: 15px 0 40px; }
+
+/* line 241, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+input[type="text"],
+input[type="email"] {
+  background: none;
+  outline: none;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  border: 1px solid;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 38px;
+  width: 200px;
+  height: 38px;
+  padding: 0 20px;
+  -webkit-appearance: none; }
+
+/* line 263, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+input:focus {
+  outline: 0; }
+
+/* line 267, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+.button {
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  font-size: 38px;
+  line-height: 19px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 221px;
+  cursor: pointer;
+  transition-duration: 0.25s; }
+
+/* line 291, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#post-subscribe {
+  display: none; }
+
+/***********************************************************************************
+
+Social
+
+************************************************************************************/
+/* line 301, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/main.scss */
+#social a.icon {
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: -5px; }
+
+/***************************************************************************************
+
+Responsive Helpers Under 800px
+
+****************************************************************************************/
+@media (max-width: 800px) {
+    /***********************************************************************************
+
+    Containers
+
+    ************************************************************************************/
+  /* line 17, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/mobile.scss */
+  .content {
+    margin-left: 10%; }
+
+    /***********************************************************************************
+
+    Body
+
+    ************************************************************************************/
+  /* line 27, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/mobile.scss */
+  body::after {
+    display: none; } }
+/***************************************************************************************
+
+Responsive Helpers Under 600px
+
+****************************************************************************************/
+@media (max-width: 600px) {
+    /***********************************************************************************
+
+    Containers
+
+    ************************************************************************************/
+  /* line 46, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/mobile.scss */
+  .content {
+    width: 80%;
+    margin-left: 10%; }
+
+    /***********************************************************************************
+
+    Body
+
+    ************************************************************************************/
+  /* line 58, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/mobile.scss */
+  body::after {
+    display: none; } }
+/***************************************************************************************
+
+Responsive Helpers Under 300px
+
+****************************************************************************************/
+@media (max-width: 300px) {
+    /***********************************************************************************
+
+    Subscribe
+
+    ************************************************************************************/
+  /* line 77, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/mobile.scss */
+  input[type="text"],
+  input[type="email"] {
+    width: 180px; }
+
+  /* line 82, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/mobile.scss */
+  .button {
+    left: 201px; } }
+/***********************************************************************************
+
+Typography
+
+************************************************************************************/
+/* line 9, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+body {
+  color: rgba(255, 255, 255, 0.85); }
+
+/* line 13, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+h1, h2, h3 {
+  color: #ffffff; }
+
+/* line 17, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+a {
+  color: rgba(255, 255, 255, 0.85); }
+
+/* line 21, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+a:hover {
+  color: #ffffff; }
+
+/* line 25, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+p a {
+  border-color: rgba(255, 255, 255, 0.25); }
+
+/***********************************************************************************
+
+Body
+
+************************************************************************************/
+/* line 35, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+body {
+  background-image: url("../images/bg2.jpg"); }
+
+/* line 39, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+body::after {
+  border-color: rgba(255, 255, 255, 0.25); }
+
+/***********************************************************************************
+
+Header
+
+************************************************************************************/
+/* line 49, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#header {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff; }
+
+/* line 54, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#header .status {
+  background-color: #ffffff; }
+
+/* line 58, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#header .status span {
+  border-color: #ffffff;
+  color: #ffffff; }
+
+/***********************************************************************************
+
+Forms
+
+************************************************************************************/
+/* line 69, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+input[type="text"],
+input[type="email"] {
+  border-color: #ffffff;
+  color: rgba(255, 255, 255, 0.85); }
+
+/* line 75, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.85); }
+
+/* line 79, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.85); }
+
+/* line 83, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.85); }
+
+/* line 87, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.85); }
+
+/* line 91, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+.button {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.55); }
+
+/* line 96, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+.button:hover {
+  background-color: #49b266;
+  color: #ffffff; }
+
+/***********************************************************************************
+
+Social
+
+************************************************************************************/
+/* line 107, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon {
+  color: rgba(0, 0, 0, 0.55); }
+
+/* line 111, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon:nth-child(1) {
+  background-color: #dcdcdc; }
+
+/* line 115, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon:nth-child(2) {
+  background-color: #f1f1f1; }
+
+/* line 119, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon:nth-child(3) {
+  background-color: #ffffff; }
+
+/* line 123, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon:hover {
+  color: #ffffff; }
+
+/* line 127, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon.github:hover {
+  background-color: #55acee; }
+
+/* line 131, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon.linkedin:hover {
+  background-color: #4e69a2; }
+
+/* line 135, /Users/felo/jfelipe/jfelipe-site/source/stylesheets/theme.scss */
+#social a.icon.email:hover {
+  background-color: #49b266; }
